@@ -182,6 +182,7 @@ describe('CommentRepositoryPostgres', () => {
                 id: 'comment-123',
                 content: 'Comment Content',
                 username: user.username,
+                owner: user.id,
                 threadId: thread.id,
                 is_delete: false,
                 date: new Date('2025-06-09T05:00:00.000Z') // '2025-06-09T12:00:00.000Z'
@@ -192,6 +193,7 @@ describe('CommentRepositoryPostgres', () => {
                 id: 'comment-456',
                 content: 'Deleted Comment',
                 username: user.username,
+                owner: user.id,
                 threadId: thread.id,
                 is_delete: true,
                 date: new Date('2025-06-09T05:01:00.000Z') // '2025-06-09T05:01:00.000Z'
